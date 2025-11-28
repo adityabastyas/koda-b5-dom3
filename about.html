@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Minitask Movie Details " />
+    <title>Movie</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="./about.js" type="module" defer></script>
+  </head>
+  <body>
+    <header>
+      <p><a href="./about.html">Aditya Bastyas Mulya</a></p>
+      <div class="fixed z-[2] r-0 flex jus">
+        <div>
+          <input type="checkbox" id="menu" hidden />
+          <label for="menu" class="hamburger">☰</label>
+          <label for="menu" class="close">×</label>
+          <nav class="navbar">
+            <a href="">About</a>
+            <a href="#">Projects</a>
+            <a href="#">Contacts</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="image-about">
+        <div class="image">
+          <img src="./image/adit.png" alt="foto" class="person" />
+        </div>
+
+        <div class="about">
+          <p>About me</p>
+          <p>
+            I am a Full Stack Web Developer with experience in building modern,
+            responsive, and scalable web applications. I focus on creating clean
+            code and delivering efficient digital solutions.
+          </p>
+          <div class="button">
+            <button><a href="">Resume</a></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="input-projects">
+        <div>
+          <p>Projects</p>
+        </div>
+        <div>
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="your name"
+            required
+          />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="mail@gmail.com"
+            required
+          />
+
+          <label for="message">Message</label>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="input message"
+            required
+          ></textarea>
+        </div>
+        <div>
+          <button><a href="">Send</a></button>
+        </div>
+        <div>
+          <a href=""><img src="./image/ig.svg" alt="logo ig" /></a>
+          <a href=""><img src="./image/linkedIn.svg" alt="logo linkedin" /></a>
+          <a href=""><img src="./image/email.svg" alt="logo email" /></a>
+        </div>
+        <div>
+          <p>Aditya Bastyas Mulya 2025</p>
+        </div>
+      </section>
+
+      <section class="footer-bg">
+        <img src="./image/bottom.svg" alt="background-bottom" />
+      </section>
+    </main>
+  </body>
+</html>
