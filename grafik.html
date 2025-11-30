@@ -4,26 +4,88 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <script src="./grafik.js" defer></script>
-    <script src="
-https://cdn.jsdelivr.net/npm/chart.js@4.5.1/dist/chart.umd.min.js
-"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header></header>
-    <main>
-      <div>
-        <canvas id="aditChart"></canvas>
+    <header class="md:px-[20px] lg:px-[120px]">
+      <p
+        class="pt-4 pl-4 fixed md:pt-[10px] md:pl-0 text-xl font-bold md:text-[30px]"
+      >
+        <a class="text-black no-underline font-[Comfortaa]" href="#"
+          >Aditya Bastyas Mulya</a
+        >
+      </p>
+      <!-- .header -->
+      <div class="fixed z-[2] right-0 pt-[10px] flex justify-around">
+        <div>
+          <!-- :checked -->
+          <input type="checkbox" id="menu" class="peer hidden" />
+          <!-- .hamburger -->
+          <label
+            for="menu"
+            class="pr-[13px] text-[30px] peer-checked:hidden md:hidden"
+            >☰</label
+          >
+          <!-- .close -->
+          <label
+            for="menu"
+            class="hidden pl-[100px] text-[40px] font-bold peer-checked:block md:hidden"
+            >×</label
+          >
+          <!-- .navbar -->
+          <nav
+            class="hidden mr-5 py-0 px-[10px] rounded-xl border-2 border-black peer-checked:block peer-checked:w-[120px] peer-checked:font-bold md:flex md:justify-end md:gap-[30px] md:border-none p-0 md:pr-[20px] lg:pr-[120px]"
+          >
+            <a
+              class="no-underline text-[25px] text-[#25282b] md:text-[30px] font-[Raleway]"
+              href="./about.html"
+              >About</a
+            >
+            <a
+              class="no-underline text-[25px] text-[#25282b] md:text-[30px] font-[Raleway]"
+              href="./movie.html"
+              >Projects</a
+            >
+            <a
+              class="underline text-[25px] text-[#25282b] md:text-[30px] font-[Raleway]"
+              href="./grafik.html"
+              >Grafik</a
+            >
+            <a
+              class="no-underline text-[25px] text-[#25282b] md:text-[30px] font-[Raleway]"
+              href="#"
+              >Contacts</a
+            >
+          </nav>
+        </div>
       </div>
+    </header>
+    <h1 class="text-center text-[50px] pt-[100px]">Grafik Pertama</h1>
 
-      <div>
-        <select name="" id="select">
-          <option disabled>pilih</option>
-          <option value="0">Data 1</option>
-          <option value="1">Data 2</option>
-          <option value="2">Data 3</option>
-        </select>
-      </div>
-    </main>
+    <div class="flex justify-center">
+      <select class="text-center text-[20px]" name="" id="select">
+        <option selected disabled>Pilih Grafik</option>
+        <option value="grafikSatu">Grafik Satu</option>
+        <option value="grafikDua">Grafik Dua</option>
+        <option value="grafikTiga">Grafik Tiga</option>
+      </select>
+    </div>
+
+    <div
+      id="grafikBox"
+      class="w-[500px] h-[400] flex justify-center items-center mx-auto"
+    >
+      <canvas id="grafik"></canvas>
+    </div>
   </body>
 </html>

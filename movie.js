@@ -1,7 +1,7 @@
 const movieId = 550;
 const asal = `https://api.themoviedb.org/3/movie/${movieId}`;
 
-const movieBox = document.querySelector("#movie");
+// const movieBox = document.querySelector("#movie");
 
 const getMovie = async (url) => {
   try {

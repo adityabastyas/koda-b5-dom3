@@ -9,13 +9,71 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <script src="./movie.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <h1 class="py-6 text-5xl text-center">Movie Detail</h1>
+    <header class="md:px-[20px] lg:px-[120px]">
+      <p
+        class="pt-4 pl-4 fixed md:pt-[10px] md:pl-0 text-xl font-bold md:text-[30px]"
+      >
+        <a class="text-black no-underline font-[Comfortaa]" href="#"
+          >Aditya Bastyas Mulya</a
+        >
+      </p>
+      <!-- .header -->
+      <div class="fixed z-[2] right-0 pt-[10px] flex justify-around">
+        <div>
+          <!-- :checked -->
+          <input type="checkbox" id="menu" class="peer hidden" />
+          <!-- .hamburger -->
+          <label
+            for="menu"
+            class="pr-[13px] text-[30px] peer-checked:hidden md:hidden"
+            >☰</label
+          >
+          <!-- .close -->
+          <label
+            for="menu"
+            class="hidden pl-[100px] text-[40px] font-bold peer-checked:block md:hidden"
+            >×</label
+          >
+          <!-- .navbar -->
+          <nav
+            class="hidden mr-5 py-0 px-[10px] rounded-xl border-2 border-black peer-checked:block peer-checked:w-[120px] peer-checked:font-bold md:flex md:justify-end md:gap-[30px] md:border-none p-0 md:pr-[20px] lg:pr-[120px]"
+          >
+            <a
+              class="no-underline text-[25px] text-[#25282b] md:text-[30px] font-[Raleway]"
+              href="./about.html"
+              >About</a
+            >
+            <a
+              class="underline text-[25px] text-[#25282b] md:text-[30px] font-[Raleway]"
+              href="./movie.html"
+              >Projects</a
+            >
+            <a
+              class="no-underline text-[25px] text-[#25282b] md:text-[30px] font-[Raleway]"
+              href="./grafik.html"
+              >Grafik</a
+            >
+            <a
+              class="no-underline text-[25px] text-[#25282b] md:text-[30px] font-[Raleway]"
+              href="#"
+              >Contacts</a
+            >
+          </nav>
+        </div>
+      </div>
     </header>
     <main
-      class="flex flex-col justify-center text-center item-center w-full h=full"
-    ></main>
+      class="flex flex-col justify-center text-center item-center w-full h=full pt-[80px]"
+    >
+      <h1 class="py-6 text-5xl text-center">Movie Detail</h1>
+    </main>
   </body>
 </html>
